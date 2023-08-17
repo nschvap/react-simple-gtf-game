@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bar__container {
+  width: 250px;
+  height: 5px;
+  position: relative;
+  @apply bg-zinc-600 rounded-full overflow-hidden;
+}
+
+.loading__bar {
+  position: absolute;
+  left: -30%;
+  bottom: 0;
+  width: 100px;
+  height: 20px;
+  animation: load 1s linear infinite;
+  @apply bg-zinc-900;
+}
+
+@keyframes load {
+  0% {
+    left: -30%;
+  }
+
+  100% {
+    left: 110%;
+  }
+}
