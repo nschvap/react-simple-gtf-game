@@ -5,4 +5,6 @@ export const gameStore = create((set) => ({
   setAlreadyGuessed: (state) => set(() => ({ alreadyGuessed: state })),
   showOptions: false,
   setShowOptions: (state) => set(() => ({ showOptions: state })),
+  hint: false,
+  showHint: (state) => set(() => ({ hint: state })),
 }));

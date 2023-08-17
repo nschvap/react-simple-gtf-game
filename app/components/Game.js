@@ -19,7 +19,7 @@ function Game({ gameObject, nextCountry }) {
           alt="Game Image"
           src={`https://github.com/stefangabos/world_countries/blob/master/data/flags/128x128/${gameObject.correct.alpha2}.png?raw=true`}
           width={100}
-          height={200}
+          height={150}
           loading="eager"
           priority={true}
           onLoad={() => setShowOptions(true)}

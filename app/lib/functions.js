@@ -35,3 +35,19 @@ export const getGameObject = () => {
     ],
   };
 };
+
+export function generarPista(palabra) {
+  let letras = palabra.split('');
+  let letrasOcultas = Math.floor(letras.length / 2);
+  
+  for (let i = 0; i < letrasOcultas; i++) {
+      let randomIndex = Math.floor(Math.random() * letras.length);
+      if (letras[randomIndex] !== '_') {
+          letras[randomIndex] = '_';
+      } else {
+          i--;
+      }
+  }
+  
+  return letras.join('');
+}

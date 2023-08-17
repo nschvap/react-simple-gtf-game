@@ -16,7 +16,7 @@
   width: 100px;
   height: 20px;
   animation: load 1s linear infinite;
-  @apply bg-zinc-900;
+  @apply bg-rose-300;
 }
 
 @keyframes load {
